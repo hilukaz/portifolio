@@ -65,6 +65,7 @@ export default {
   border-bottom-width: 12px;
   border-color: gray;
   align-items: center;
+  background-color: rgb(230, 231, 231);
 }
 .header>h3{
   margin: 5px;
@@ -78,4 +79,5 @@ a{
   
   margin: 0px 30px;
 }
+
 </style>

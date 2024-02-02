@@ -31,6 +31,15 @@ export default{
 <style scoped>
 img{
     max-height: 100px;
-    
+    margin: 50px;
+    min-height: 10px;
+}
+.tec{
+    display: flex;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+.ling{
+    background-color: aqua;
 }
 </style>

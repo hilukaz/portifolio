@@ -23,6 +23,7 @@
           <img v-bind:src="foto" alt="" class="foto">
         </div>
         <div class="linguagem">
+          <!-- essa parte não está responsiva -->
           <Linguagem/>
         </div>
         <div class="projeto"></div>
@@ -70,18 +71,22 @@ export default defineComponent({
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* fr = metade */
-    grid-template-rows: 90vh 100vh 100vh;
+    grid-template-rows: 100vh 100vh 100vh;
     /* 100vh é equivalente a tela inteira */
-    grid-template-areas:'a a'
+    grid-template-areas:'sobre img'
     'ling ling' 
     'proj proj';
     /* define quais div ocupam cada coluna */
+
+    
   }
  
+  
+
   .home>div{
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin-bottom: 100px ;
   }
 
   .text{
@@ -89,14 +94,18 @@ export default defineComponent({
     left:-20%;
   }
 
-  .text>h2{
-
-  }
   
   .sobre,.img{
     align-items: center;
     justify-content: center;
     
+  }
+
+  .img{
+    grid-area: img;
+  }
+  .sobre{
+    grid-area: sobre;
   }
 
   .linguagem {
@@ -119,4 +128,36 @@ export default defineComponent({
     align-items: center;
     color:rgb(0, 0, 0);
   }
+
+  @media screen and (max-width: 600px) {
+  .home {
+    grid-template-columns: 1fr; /* Remova esta linha para ter uma única coluna em dispositivos móveis */
+    grid-template-rows: 60vh;
+    grid-template-areas:
+    'img' 
+    'sobre'
+    'ling ' 
+    'proj ';
+  }
+  .img{
+    padding: 10px;
+  }
+  img{
+    min-width: 50%;
+  }
+  h1{
+    font-size: 3em;
+    font-family: 'Lato';
+    align-items: center;
+    color:rgb(0, 0, 0);
+  }
+  .home>div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px ;
+   }
+   h2{
+    font-size: 1em;
+   }
+}
 </style>
