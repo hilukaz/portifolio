@@ -26,7 +26,9 @@
           <!-- essa parte não está responsiva -->
           <Linguagem/>
         </div>
-        <div class="projeto"></div>
+        <div class="projeto">
+          <Projeto/>
+        </div>
       </div>
     </body>
   </html>
@@ -37,12 +39,14 @@
 import { defineComponent } from 'vue';
 import Header from '../components/Header.vue'
 import Linguagem from '../components/Linguagem.vue'
+import Projeto from '../components/Projeto.vue'
 
 export default defineComponent({
   name: 'HomeView',
   components:{
     Header,
     Linguagem,
+    Projeto
   },
   data(){
     return{
@@ -71,7 +75,7 @@ export default defineComponent({
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* fr = metade */
-    grid-template-rows: 100vh 100vh 100vh;
+    grid-template-rows: 100vh 110vh 100vh;
     /* 100vh é equivalente a tela inteira */
     grid-template-areas:'sobre img'
     'ling ling' 
@@ -129,9 +133,9 @@ export default defineComponent({
     color:rgb(0, 0, 0);
   }
 
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
   .home {
-    grid-template-columns: 1fr; /* Remova esta linha para ter uma única coluna em dispositivos móveis */
+    grid-template-columns: 1fr; 
     grid-template-rows: 60vh;
     grid-template-areas:
     'img' 
@@ -159,5 +163,5 @@ export default defineComponent({
    h2{
     font-size: 1em;
    }
-}
+} */
 </style>

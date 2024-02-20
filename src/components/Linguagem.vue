@@ -39,7 +39,7 @@ img{
     padding: 100px;
     flex-wrap: wrap;
 }
-.ling{
+/* .ling{
     background-color: aqua;
-}
+} */
 </style>
