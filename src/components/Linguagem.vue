@@ -39,6 +39,18 @@ img{
     padding: 100px;
     flex-wrap: wrap;
 }
+
+@media (max-width: 1270px) {
+    .tec{
+        padding: 40px;
+        justify-content: space-between;
+    }
+    img{
+    max-height: 100px;
+    margin: 20px;
+    min-height: 10px;
+}
+}
 /* .ling{
     background-color: aqua;
 } */

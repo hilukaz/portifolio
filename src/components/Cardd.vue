@@ -102,7 +102,7 @@ img{
   max-height: 180px;
   max-width: 100%;
     margin-bottom: 30px;
-    min-height: 10px;
+    min-height: 180px;
 }
 
 .project-title {
@@ -150,4 +150,21 @@ img{
 .view-code-button {
   background-color: #333;
 } 
+
+@media (max-width: 1270px) {
+  .project-card{
+      justify-content: center;
+      margin:0px;
+      margin-bottom: 100px;
+  }
+  .video-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .video-player {
+    width: 100%;
+    height: 100%;
+  }
+}
 </style>
