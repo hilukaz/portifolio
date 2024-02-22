@@ -38,6 +38,7 @@ img{
     display: flex;
     padding: 100px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media (max-width: 1270px) {

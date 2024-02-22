@@ -50,7 +50,7 @@ export default {
     flex-direction: row;
     justify-content: end;
     position: relative;
-    margin-left: 50%;
+    margin-left: 40%;
   }
   .logotipo{
     min-width:40px;
@@ -73,6 +73,7 @@ export default {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  height: 4%;
 }
 .header>h3{
   margin: 5px;

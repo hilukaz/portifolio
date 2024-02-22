@@ -96,7 +96,7 @@ export default({
   border-style: double;
   padding: 20px;
   margin-bottom: 20px;
-    margin: 50px;
+    margin: 30px;
 }
 img{
   max-height: 180px;
@@ -151,7 +151,7 @@ img{
   background-color: #333;
 } 
 
-@media (max-width: 1270px) {
+@media (max-width: 700px) {
   .project-card{
       justify-content: center;
       margin:0px;

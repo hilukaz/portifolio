@@ -102,6 +102,7 @@ export default defineComponent({
   .text{
     position: relative;
     left:-20%;
+    font-size: 2.0 rem;
   }
 
   
@@ -135,7 +136,7 @@ export default defineComponent({
     border-radius: 50px;
   }
   h1{
-    font-size: 5em;
+    font-size: 4.5em;
     font-family: 'Lato';
     align-items: center;
     color:rgb(0, 0, 0);
@@ -160,7 +161,7 @@ export default defineComponent({
     flex-direction: column-reverse;
     border-style: double;
     margin: 2%;
-    margin-top: 100px;
+    margin-top: 85px;
     padding: 0px;
   }
   .sobre{
