@@ -132,7 +132,6 @@ export default defineComponent({
   }
   .foto{
     max-width: 30%;
-    
     border-radius: 50px;
   }
   h1{
@@ -168,10 +167,13 @@ export default defineComponent({
     width: 100%;
     margin-top: 50px;
   }
-
+  .foto{
+    max-width: 20%;
+    min-width: 130px;
+  }
   .img{
     padding: 10px;
-    width: 90%;
+    width: 100%;
   }
   img{
     max-width: 20%;
@@ -189,6 +191,19 @@ export default defineComponent({
    }
    h2{
     font-size: 1em;
+   }
+
+   
+
+   @media (max-height: 560px) {
+      .banner, #sobre{
+      display: flex;
+      flex-direction: row;
+      border-style: double;
+      margin: 2%;
+      margin-top: 100px;
+      padding: 0px;
+    }
    }
 }
 </style>
